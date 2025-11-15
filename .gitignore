@@ -1,0 +1,22 @@
+# Model weights - too large for GitHub
+*.weights
+*.dat
+
+# Private data
+Unique_faces/*
+!Unique_faces/.gitkeep
+output_frames/*
+!output_frames/.gitkeep
+Input_frames/*
+!Input_frames/.gitkeep
+videos/*
+!videos/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+.env
+
+# OS
+.DS_Store
+Thumbs.db
