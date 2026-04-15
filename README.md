@@ -242,7 +242,7 @@ pip install dlib
 **Guide:** Mrs. Jayashri Mittal  
 **Institution:** St. Francis Institute of Technology  
 **University:** University of Mumbai  
-**Academic Year:** 2023–2024  
+**Academic Year:** 2023-2024  
 
 ---
 
