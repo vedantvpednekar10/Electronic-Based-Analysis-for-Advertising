@@ -239,10 +239,10 @@ pip install dlib
 
 ## 🙏 Guide & Institution
 
-**Guide:** Mrs. Jayashri Mittal
-**Institution:** St. Francis Institute of Technology
-**University:** University of Mumbai
-**Academic Year:** 2023–2024
+**Guide:** Mrs. Jayashri Mittal  
+**Institution:** St. Francis Institute of Technology  
+**University:** University of Mumbai  
+**Academic Year:** 2023–2024  
 
 ---
 
@@ -258,12 +258,12 @@ pip install dlib
 
 ## 📧 Contact
 
-**Vedant Pednekar**
-Graduate Student | Software Developer | AI Enthusiast
-Email: [vedantvpednekar10@gmail.com](mailto:vedantvpednekar10@gmail.com)
-University Email: [vepednek@syr.edu](mailto:vepednek@syr.edu)
-LinkedIn: https://www.linkedin.com/in/vedantpednekar/
-GitHub: https://github.com/vedantvpednekar10
+**Vedant Pednekar**  
+Graduate Student | Software Developer | AI Enthusiast  
+Email: [vedantvpednekar10@gmail.com](mailto:vedantvpednekar10@gmail.com)  
+University Email: [vepednek@syr.edu](mailto:vepednek@syr.edu)  
+LinkedIn: https://www.linkedin.com/in/vedantpednekar/  
+GitHub: https://github.com/vedantvpednekar10  
 
 ---
 
