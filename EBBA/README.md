@@ -4,13 +4,11 @@ Analyze a recording or a local webcam session to estimate how many people face a
 
 ## Run locally
 
-Use 64-bit Python 3.11. On Windows, install Visual Studio Build Tools with the Desktop development with C++ workload so pip can build Dlib.
+Use 64-bit Python 3.11 or 3.12. Dlib is built from source. On Windows, install Visual Studio Build Tools with the Desktop development with C++ workload and the C++ CMake tools component. Open Developer PowerShell for Visual Studio and check that `cmake --version` works before installing the Python dependencies.
 
 ```powershell
 cd EBBA
 python -m venv .venv
-.\.venv\Scripts\python.exe -m pip install "cmake>=3.25,<4"
-$env:Path = "$(Resolve-Path .\.venv\Scripts);$env:Path"
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
 New-Item -ItemType Directory -Path models -Force
 ```

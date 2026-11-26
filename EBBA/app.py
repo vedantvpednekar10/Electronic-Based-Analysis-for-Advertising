@@ -5,6 +5,7 @@ import shutil
 from pathlib import Path
 from tempfile import TemporaryDirectory
 
+import cv2
 import pandas as pd
 import streamlit as st
 
@@ -55,17 +56,19 @@ if st.button("Analyze video" if mode == "Upload a video" else "Start webcam", ty
                                           tolerance=tolerance, dwell=dwell, live_seconds=duration):
                     samples.append(row)
                     preview.image(frame, channels="BGR", width="stretch")
-                st.session_state.result = (frame, samples)
+                source_name = upload.name if upload is not None else "Local webcam"
+                st.session_state.result = (source_name, frame, samples)
             preview.empty()
-        except (ImportError, OSError, RuntimeError, ValueError) as error:
+        except (cv2.error, ImportError, OSError, RuntimeError, ValueError) as error:
             preview.empty()
             st.error(f"Analysis could not finish. {error}")
 
 if "result" in st.session_state:
-    frame, samples = st.session_state.result
+    source_name, frame, samples = st.session_state.result
     report = pd.DataFrame(samples)
     last = samples[-1]
     st.subheader("Analysis results")
+    st.caption(source_name)
     detected, viewers, peak = st.columns(3)
     detected.metric("People tracked", last["tracked_people"])
     viewers.metric("Estimated viewers", last["estimated_viewers"])
