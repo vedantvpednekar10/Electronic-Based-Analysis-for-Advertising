@@ -13,7 +13,7 @@ python -m venv .venv
 New-Item -ItemType Directory -Path models -Force
 ```
 
-Download [the original Dlib landmark model](https://drive.google.com/file/d/19OGTyEgkKnHWeMPfRx_cQYbCnKg8DOlN/view) into `models/shape_predictor_68_face_landmarks.dat`. You can also set `EBBA_LANDMARK_MODEL` to an existing predictor file.
+Download the [Dlib landmark model archive](https://github.com/davisking/dlib-models/blob/master/shape_predictor_68_face_landmarks.dat.bz2) and extract it to `models/shape_predictor_68_face_landmarks.dat`. You can also set `EBBA_LANDMARK_MODEL` to an existing predictor file.
 
 ```powershell
 .\.venv\Scripts\python.exe -m streamlit run app.py
