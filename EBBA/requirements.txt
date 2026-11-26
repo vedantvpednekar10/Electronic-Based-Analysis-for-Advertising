@@ -1,0 +1,8 @@
+cmake>=3.25,<4
+dlib==19.24.6
+mtcnn==1.0.0
+numpy==1.26.4
+opencv-python-headless==4.11.0.86
+pandas>=2.2,<3
+streamlit>=1.49,<2
+tensorflow==2.18.1
